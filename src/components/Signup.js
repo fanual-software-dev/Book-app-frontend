@@ -23,7 +23,7 @@ const Signup = () => {
 
               const userInfo = {firstname, lastname, phone, email, password}
 
-              const res = await fetch('/user/signup',{
+              const res = await fetch('https://book-backend-inky.vercel.app/user/signup',{
                   method:"POST",
                   body:JSON.stringify(userInfo),
                   headers:{
