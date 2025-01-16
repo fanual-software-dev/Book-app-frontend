@@ -108,6 +108,7 @@ button:hover{
 .login-div{
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 
 }
@@ -223,5 +224,26 @@ button:hover{
   color: #009879;
   font-weight: bold;
   font-size: 16px;
+}
+
+.verify-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+.verify-form input{
+  width: 50px;
+  padding: 15px 0;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  font-size: 18px;
+}
+
+.verify-form input::placeholder{
+  font-size: 18px;
+  font-weight: bold;
 }
 

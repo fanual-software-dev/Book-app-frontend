@@ -40,9 +40,10 @@ const Signup = () => {
               
               
               dispatch({type:"LOGIN",payload:UserData})
-              localStorage.setItem('user',JSON.stringify(UserData))
+              localStorage.clear()
+              localStorage.setItem('userData',JSON.stringify(UserData))
               console.log("here is the user",user)
-              navigate('/books')
+              navigate('/user/verification')
 
               
               
