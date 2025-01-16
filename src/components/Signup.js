@@ -23,7 +23,7 @@ const Signup = () => {
 
               const userInfo = {firstname, lastname, phone, email, password}
 
-              const res = await fetch('https://book-backend-inky.vercel.app/user/signup',{
+              const res = await fetch('/user/signup',{
                   method:"POST",
                   body:JSON.stringify(userInfo),
                   headers:{
@@ -42,7 +42,7 @@ const Signup = () => {
               dispatch({type:"LOGIN",payload:UserData})
               localStorage.clear()
               localStorage.setItem('userData',JSON.stringify(UserData))
-              console.log("here is the user",user,"here is the user data",UserData)
+            //   console.log("here is the user",user,"here is the user data",UserData)
               navigate('/user/verification')
 
               

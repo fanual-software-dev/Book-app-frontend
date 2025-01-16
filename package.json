@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:4444",
+  "proxy": "https://book-backend-inky.vercel.app",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
