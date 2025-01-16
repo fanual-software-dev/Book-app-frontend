@@ -42,7 +42,7 @@ const Signup = () => {
               dispatch({type:"LOGIN",payload:UserData})
               localStorage.clear()
               localStorage.setItem('userData',JSON.stringify(UserData))
-              console.log("here is the user",user)
+              console.log("here is the user",user,"here is the user data",UserData)
               navigate('/user/verification')
 
               
